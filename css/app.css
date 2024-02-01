@@ -72,3 +72,11 @@ textarea:not([rows]) {
 }
 
 /* 👇 Start custom code 👇 */
+
+section#poem-text p {
+  margin-top: 0px;
+}
+
+section#poem-text p:nth-of-type(even) {
+  padding-left: 30px;
+}
