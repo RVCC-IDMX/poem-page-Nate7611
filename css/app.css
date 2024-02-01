@@ -73,10 +73,45 @@ textarea:not([rows]) {
 
 /* 👇 Start custom code 👇 */
 
+html {
+  background-color: #242424;
+  color: antiquewhite;
+}
+
+body {
+  font-family: "Lumanosimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+header h1 {
+  text-align: center;
+  font-family: "Seaweed Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+section#poem-text {
+  width: fit-content;
+  margin: 0 auto;
+}
+
 section#poem-text p {
   margin-top: 0px;
 }
 
 section#poem-text p:nth-of-type(even) {
   padding-left: 30px;
+}
+
+section#lighthouse-img {
+  width: fit-content;
+  max-width: 50vw;
+  margin: 20px auto;
+}
+
+#lighthouse-img img {
+  width: 100%;
 }
