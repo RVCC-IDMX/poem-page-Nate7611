@@ -74,7 +74,7 @@ textarea:not([rows]) {
 /* 👇 Start custom code 👇 */
 
 html {
-  background-color: #242424;
+  background-color: #202020;
   color: antiquewhite;
 }
 
@@ -96,14 +96,22 @@ header h1 {
 section#poem-text {
   width: fit-content;
   margin: 0 auto;
+  column-count: 2;
+  column-gap: 50px;
+  column-fill: balance;
+}
+
+section#poem-text div {
+  margin-bottom: 35px;
 }
 
 section#poem-text p {
-  margin-top: 0px;
+  margin-top: 5px;
+  font-size: 1.1rem;
 }
 
 section#poem-text p:nth-of-type(even) {
-  padding-left: 30px;
+  padding-left: 45px;
 }
 
 section#lighthouse-img {
