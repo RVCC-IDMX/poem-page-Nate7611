@@ -84,11 +84,11 @@ header h1 {
   font-family: "Seaweed Script", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 8rem;
+  font-size: clamp(3rem, 10vw, 8rem);
 }
 
 header h2 {
-  font-size: 2rem;
+  font-size: clamp(0.8rem, 2vw, 2rem);
 }
 
 header {
@@ -97,7 +97,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   margin: 40px auto;
-  max-width: 90vw;
+  max-width: 80vw;
 }
 
 #title-author-text {
@@ -127,7 +127,7 @@ header {
 
 #poem-text p {
   margin-top: 5px;
-  font-size: 1.1rem;
+  font-size: clamp(0.65rem, 3vw, 1.5rem);
 }
 
 #poem-text p:nth-of-type(even) {
@@ -136,11 +136,62 @@ header {
 
 #lighthouse-img {
   width: fit-content;
-  max-width: 30vw;
+  max-width: min(40vw, 1000px);
+}
+
+#lighthouse-img figcaption {
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
 }
 
 #lighthouse-img img {
+  height: auto;
   width: 100%;
   border: 10px solid antiquewhite;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 1800px) {
+  header {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  #poem-text {
+    column-count: 1;
+  }
+
+  #lighthouse-img {
+    max-width: max(80vw, 300px);
+  }
+
+  #lighthouse-img figcaption {
+    text-align: center;
+  }  
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  #poem-text {
+    padding: 0px;
+    border: 0px;
+  }
+
+  #poem-text p:nth-of-type(even) {
+    padding-left: 20px;
+  }
+
+  #title-author-text {
+    border: 5px solid antiquewhite;
+    padding: 5px;
+  }
+
+  #lighthouse-img img {
+    height: auto;
+    width: 100%;
+    border: 5px solid antiquewhite;
+  }
 }
