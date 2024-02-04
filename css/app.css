@@ -161,7 +161,7 @@ header {
   }
 
   #lighthouse-img {
-    max-width: max(80vw, 300px);
+    max-width: max(70vw, 300px);
   }
 
   #lighthouse-img figcaption {
