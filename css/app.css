@@ -140,7 +140,7 @@ header {
 }
 
 #lighthouse-img figcaption {
-  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
 }
 
 #lighthouse-img img {
@@ -173,6 +173,7 @@ header {
   header {
     flex-direction: column;
     max-width: 100%;
+    margin: 28px auto;
   }
 
   #poem-text {
